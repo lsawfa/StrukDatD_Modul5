@@ -29,8 +29,8 @@ class BinaryTree:
     def pre_order(self, node):
         if node is not None:
             print(node.data, end=" ")
-            self.pre_order(node.left)
-            self.pre_order(node.right)
+            self.in_order(node.left)
+            self.in_order(node.right)
 
     def post_order(self, node):
         if node is not None:
